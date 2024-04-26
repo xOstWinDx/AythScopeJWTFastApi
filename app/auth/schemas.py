@@ -14,6 +14,7 @@ class SUserInDB(SUser):
 
 class STokenData(BaseModel):
     username: str | None = None
+    scopes: list[str] = []
 
 
 class SToken(BaseModel):
